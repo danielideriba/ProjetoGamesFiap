@@ -6,18 +6,25 @@ public class Asteroide : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody2D rb2d;
+
     [SerializeField]
     private float maximo;
+
     [SerializeField]
     private float minimo;
+
     [SerializeField]
     private float velocidade;
+
     [SerializeField]
     private int tempoVida;
+
     [SerializeField]
     private int valorAsteroide;
+
     [SerializeField]
     private GameObject prefabExplosao1;
+
     [SerializeField]
     private GameObject prefabExplosao2;
 

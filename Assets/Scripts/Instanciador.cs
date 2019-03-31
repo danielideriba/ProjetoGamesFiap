@@ -12,7 +12,6 @@ public class GerarObjetos
     public float tempo;
 
 }
-
 public class Instanciador : MonoBehaviour
 {
     public GerarObjetos objetos;

@@ -1,5 +1,5 @@
 
-=== Fri Mar 29 18:52:52 2019
+=== Sat Mar 30 20:22:20 2019
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
@@ -41,11 +41,3 @@ The following packages were added:
   com.unity.modules.vr@1.0.0
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
-
-=== Sat Mar 30 14:55:27 2019
-
-Packages were changed.
-Update Mode: updateDependencies
-
-The following packages were updated:
-  com.unity.package-manager-ui from version 2.0.3 to 2.0.7

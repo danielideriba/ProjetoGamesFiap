@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Jogador : MonoBehaviour
 {
-   // [SerializeField]
-   // private Estado estado;
+    [SerializeField]
+    private Estado estado;
 
     Animator animator;
 
@@ -39,7 +39,7 @@ public class Jogador : MonoBehaviour
 
     void Awake()
     {
-     //   estado.Iniciar();
+        estado.Iniciar();
     }
 
     // Use this for initialization
@@ -114,9 +114,9 @@ public class Jogador : MonoBehaviour
     {
         if (outro.tag == "Energia")
         {
-          //  if (estado.ValorAtual < estado.MaximoValor)
+            if (estado.ValorAtual < estado.MaximoValor)
             {
-          //      estado.ValorAtual += 2;
+                estado.ValorAtual += 2;
                 Destroy(outro.gameObject);
             }
         }
@@ -126,18 +126,19 @@ public class Jogador : MonoBehaviour
     {
         if (outro.tag == "Asteroide" || outro.tag == "Inimigo")
         {
-          //  if (estado.ValorAtual > 0)
+            if (estado.ValorAtual > 0)
             {
-          //      estado.ValorAtual -= 10;
+                estado.ValorAtual -= 10;
                 animator.SetTrigger("Dano");
 
             }
 
-         //   if (estado.ValorAtual <= 0)
+            if (estado.ValorAtual <= 0)
             {
                 Instantiate(prefabExplosao, transform.position, transform.rotation);
                 Destroy(gameObject);
                 Mensagens.gameOver = true;
+                
             }
         }
     }

@@ -20,4 +20,5 @@ public class Bomba : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         rb2d.velocity = transform.right * velocidade;
     }
+
 }

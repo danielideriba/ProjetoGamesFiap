@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bar : MonoBehaviour
 {
     private float fillAmount;
-   // [SerializeField]
-   // private Text texto;
-   // [SerializeField]
-   // private Image conteudo;
+    [SerializeField]
+
+    private Text texto;
+    [SerializeField]
+    private Image conteudo;
 
     [SerializeField]
     private float lerpVelocidade;
@@ -28,8 +30,8 @@ public class Bar : MonoBehaviour
 
         set
         {
-  //          string[] temp = texto.text.Split(':');
-  //          texto.text = temp[0] + ":" + value;
+            string[] temp = texto.text.Split(':');
+            texto.text = temp[0] + ":" + value;
             fillAmount = BarValor(value, MaximoValor);
         }
     }
@@ -40,7 +42,7 @@ public class Bar : MonoBehaviour
 
         if (lerpCor)
         {
-    //        conteudo.color = corAlta;
+            conteudo.color = corAlta;
         }
     }
 
@@ -54,19 +56,19 @@ public class Bar : MonoBehaviour
 
     private void EfeitoBar()
     {
-  //      if (fillAmount != conteudo.fillAmount)
+        if (fillAmount != conteudo.fillAmount)
         {
-    //        conteudo.fillAmount = Mathf.Lerp(conteudo.fillAmount, fillAmount, Time.deltaTime * lerpVelocidade);
+            conteudo.fillAmount = Mathf.Lerp(conteudo.fillAmount, fillAmount, Time.deltaTime * lerpVelocidade);
         }
         if (lerpCor)
         {
-      //      conteudo.color = Color.Lerp(corBaixa, corAlta, fillAmount);
+            conteudo.color = Color.Lerp(corBaixa, corAlta, fillAmount);
         }
     }
 
     private float BarValor(float valorAtual, float maximoValor)
     {
         return (valorAtual / maximoValor);
-        // 80/100 = 0,8 
+         
     }
 }

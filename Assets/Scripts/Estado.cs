@@ -5,11 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class Estado
 {
-
     [SerializeField]
     private Bar bar;
+
     [SerializeField]
     private float maximoValor;
+
     [SerializeField]
     private float valorAtual;
 
@@ -47,4 +48,3 @@ public class Estado
         this.ValorAtual = valorAtual;
     }
 }
-

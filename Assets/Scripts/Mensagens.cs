@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mensagens : MonoBehaviour
 {
     public static bool gameOver;
-   // public Text txtFimDeJogo;
-    //public Text txtJogarNovamente;
-    //public Text txtpontos;
+    public Text txtFimDeJogo;
+    public Text txtJogarNovamente;
+    public Text txtpontos;
     public static int pontos;
     // Use this for initialization
     void Start()
@@ -21,12 +22,12 @@ public class Mensagens : MonoBehaviour
     void Update()
     {
 
-       // txtpontos.text = "Pontos:  " + pontos;
+        txtpontos.text = "Pontos:  " + pontos;
 
         if (gameOver == true)
         {
-        //    txtFimDeJogo.text = "Fim de Jogo";
-        //    txtJogarNovamente.text = "Pressione a tecla N para jogar novamente";
+            txtFimDeJogo.text = "Fim de Jogo";
+            txtJogarNovamente.text = "Pressione a tecla N para jogar novamente";
         }
     }
 }

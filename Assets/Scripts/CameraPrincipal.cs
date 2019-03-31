@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraPrincipal : MonoBehaviour
 {
-
     private static Vector3 direita;
     private static Vector3 esquerda;
     private static Vector3 paraCima;
@@ -58,7 +58,7 @@ public class CameraPrincipal : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
-          //  SceneManager.LoadScene(cena);
+            SceneManager.LoadScene(cena);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -66,5 +66,4 @@ public class CameraPrincipal : MonoBehaviour
             Application.Quit();
         }
     }
-
 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bomba
+  - Asteroide
+  - Inimigo
+  - Energia
   layers:
   - Default
   - TransparentFX
@@ -41,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1841163461
     locked: 0
