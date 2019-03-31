@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 333578454974895376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.5, y: -1.39, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 5014687337562385746}
   - {fileID: 333578453436379736}
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f7591d635414c7c409ece6b282a1991f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ecc4ce30957f7c4e8c4ff3d05666d79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.84, y: 0.72}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.84, y: 0.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -181,10 +181,11 @@ MonoBehaviour:
     maximoValor: 0
     valorAtual: 0
   velocidade: 3
-  instanciarBombas: {fileID: 0}
-  prefabBomba: {fileID: 0}
+  instanciarBombas: {fileID: 333578453436379737}
+  prefabBomba: {fileID: 2952591821836631739, guid: a57967a85606dc64095bddfe988b7171,
+    type: 3}
   prefabExplosao: {fileID: 0}
-  atirarTempo: 0
+  atirarTempo: 0.2
 --- !u!82 &333578454974895402
 AudioSource:
   m_ObjectHideFlags: 0

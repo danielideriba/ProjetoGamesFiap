@@ -116,7 +116,7 @@ public class Jogador : MonoBehaviour
         {
             if (estado.ValorAtual < estado.MaximoValor)
             {
-                estado.ValorAtual += 2;
+                estado.ValorAtual += 10;
                 Destroy(outro.gameObject);
             }
         }
